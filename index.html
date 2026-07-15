@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Happy Birthday | A Special Gift</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Indie+Flower&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Room dimming overlay -->
+    <div class="dim-overlay" id="dim-overlay"></div>
+
+    <!-- Main Container -->
+    <div class="room-container">
+        <!-- Table wood texture surface -->
+        <div class="table-surface"></div>
+
+        <!-- Book Shadow / Reflection on Table -->
+        <div class="book-reflection" id="book-reflection"></div>
+
+        <!-- 3D Book Component -->
+        <div class="book-wrap" id="book-wrap">
+            <div class="book" id="book">
+                <!-- Front Cover (Preserve 3D) -->
+                <div class="book-cover" id="book-cover">
+                    <!-- Outside Cover -->
+                    <div class="cover-front">
+                        <div class="cover-border">
+                            <div class="cover-emboss">
+                                <!-- Gold Foil Crescent Moon & Star Emboss -->
+                                <svg class="gold-emblem" viewBox="0 0 100 100">
+                                    <path fill="url(#goldGradient)" d="M50,15 A35,35 0 1,0 85,50 A42,42 0 1,1 50,15 Z" />
+                                    <polygon fill="url(#goldGradient)" points="65,30 68,37 76,37 70,42 72,50 65,45 58,50 60,42 54,37 62,37" />
+                                </svg>
+                                <h1 class="gold-text">Happy Birthday</h1>
+                                <p class="gold-subtext">For Someone Special</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Inside Cover (Left page when open) -->
+                    <div class="cover-back">
+                        <div class="page-lining"></div>
+                    </div>
+                </div>
+
+                <!-- Page Stack / Base Pages (Right page when open) -->
+                <div class="book-pages" id="book-pages">
+                    <!-- Page Crease shadow -->
+                    <div class="page-crease"></div>
+
+                    <!-- Inner Page Content -->
+                    <div class="page-content">
+                        <!-- Magic Window (Live Miniature Night Scene) -->
+                        <div class="magic-window" id="magic-window" role="button" aria-label="Mulai Perjalanan">
+                            <div class="window-scene">
+                                <!-- Miniature elements identical to page 2 -->
+                                <div class="mini-sky">
+                                    <div class="mini-stars"></div>
+                                    <div class="mini-moon"></div>
+                                    <div class="mini-clouds">
+                                        <div class="mini-cloud c1"></div>
+                                        <div class="mini-cloud c2"></div>
+                                    </div>
+                                </div>
+                                <div class="mini-sea">
+                                    <div class="mini-mist"></div>
+                                    <div class="mini-reflection"></div>
+                                    <div class="mini-waves">
+                                        <div class="mini-wave w1"></div>
+                                        <div class="mini-wave w2"></div>
+                                    </div>
+                                    <div class="mini-boat">
+                                        <div class="mini-boat-body"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="window-overlay">
+                                <span class="window-prompt">Begin the Journey →</span>
+                            </div>
+                        </div>
+
+                        <!-- Handwritten Birthday Letter -->
+                        <div class="letter-body">
+                            <p class="salutation">Dear Hani,</p>
+                            <p class="letter-text">Selamat ulang tahun.</p>
+                            <p class="letter-text">Semoga setiap langkahmu selalu dipenuhi kebahagiaan.</p>
+                            <p class="letter-text">Aku berharap seluruh impianmu satu demi satu menjadi kenyataan.</p>
+                            <p class="letter-text">Terima kasih sudah menjadi seseorang yang luar biasa.</p>
+                            <p class="letter-text">Semoga mulai hari ini menjadi awal dari perjalanan baru yang lebih indah.</p>
+                            <p class="valediction">Semangat,</p>
+                            <p class="signature">Kiyeraaa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SVGs definition for Gradients -->
+    <svg style="width:0; height:0; position:absolute;">
+        <defs>
+            <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c5a059" />
+                <stop offset="30%" stop-color="#f7e0a3" />
+                <stop offset="50%" stop-color="#ae8845" />
+                <stop offset="75%" stop-color="#f7e0a3" />
+                <stop offset="100%" stop-color="#916a27" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <script src="script.js"></script>
+</body>
+</html>
